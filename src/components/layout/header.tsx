@@ -22,6 +22,7 @@ import {
   User,
 
 } from "lucide-react";
+import { StreakBadge } from "@/components/shared/StreakBadge";
 
 const navItems = [
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
@@ -99,6 +100,7 @@ export function Header() {
 
           {/* Right side */}
           <div className="flex items-center gap-3">
+            <StreakBadge />
             {isLoggedIn ? (
               <>
                 <Link href="/blog" className="hidden lg:flex">

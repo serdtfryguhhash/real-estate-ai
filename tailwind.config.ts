@@ -75,6 +75,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],
+        display: ["Playfair Display", "Georgia", "serif"],
       },
       fontFeatureSettings: {
         tnum: '"tnum"',
