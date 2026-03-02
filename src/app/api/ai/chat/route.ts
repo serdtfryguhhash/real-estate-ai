@@ -4,7 +4,7 @@ import { chat, analyzeDeal, estimateRehabCosts, analyzeNeighborhood, generateMar
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { action, message, property, location, market } = body;
+    const { action, message, property, location, market, memoryContext } = body;
 
     let response: string;
 
@@ -26,7 +26,9 @@ export async function POST(request: NextRequest) {
         response = await chat([
           {
             role: "system",
-            content: "You are Real Estate AI's investment advisor. Help investors analyze deals and make data-driven decisions. Always include the disclaimer: For informational purposes only, not financial advice.",
+            content: `You are Real Estate AI's investment advisor — a personalized AI analyst for this specific investor. Help investors analyze deals and make data-driven decisions. Always include the disclaimer: For informational purposes only, not financial advice.
+
+${memoryContext || ""}`,
           },
           { role: "user", content: message },
         ]);

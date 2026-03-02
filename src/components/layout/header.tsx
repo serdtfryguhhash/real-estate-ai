@@ -20,7 +20,7 @@ import {
   Gift,
   LogIn,
   User,
-
+  Users,
 } from "lucide-react";
 import { StreakBadge } from "@/components/shared/StreakBadge";
 
@@ -31,6 +31,7 @@ const navItems = [
   { href: "/calculator", label: "Calculator", icon: Calculator },
   { href: "/alerts", label: "Alerts", icon: Bell },
   { href: "/portfolio", label: "Portfolio", icon: Briefcase },
+  { href: "/community", label: "Community", icon: Users },
 ];
 
 const secondaryNav = [

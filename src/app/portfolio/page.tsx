@@ -10,6 +10,9 @@ import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { DealScore } from "@/components/shared/deal-score";
 import { Disclaimer } from "@/components/shared/disclaimer";
+import { PortfolioAnalytics } from "@/components/features/portfolio-analytics";
+import { NeighborhoodWatch } from "@/components/features/neighborhood-watch";
+import { ShareCard } from "@/components/shared/ShareCard";
 import { savedDeals } from "@/data/properties";
 import { formatCurrency, formatPercent, getStageColor, formatDate } from "@/lib/utils";
 import { SavedDeal } from "@/types";
@@ -157,6 +160,12 @@ export default function PortfolioPage() {
           </Card>
         </div>
 
+        {/* Portfolio Analytics */}
+        <div className="mb-8">
+          <h2 className="text-lg font-semibold mb-4">Portfolio Analytics</h2>
+          <PortfolioAnalytics />
+        </div>
+
         {view === "kanban" ? (
           /* Kanban Board */
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-8">
@@ -238,6 +247,12 @@ export default function PortfolioPage() {
             </CardContent>
           </Card>
         )}
+
+        {/* Neighborhood Watch & Share Card */}
+        <div className="grid lg:grid-cols-2 gap-6 mb-8">
+          <NeighborhoodWatch />
+          <ShareCard />
+        </div>
 
         <Disclaimer />
       </main>

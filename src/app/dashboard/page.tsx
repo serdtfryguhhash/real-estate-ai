@@ -11,6 +11,10 @@ import { StatCard } from "@/components/shared/stat-card";
 import { DealScore } from "@/components/shared/deal-score";
 import { PropertyCard } from "@/components/shared/property-card";
 import { Disclaimer } from "@/components/shared/disclaimer";
+import { XPBar } from "@/components/shared/XPBar";
+import { MarketPulse } from "@/components/features/market-pulse";
+import { WeeklyReport } from "@/components/features/weekly-report";
+import { DealHistory } from "@/components/features/deal-history";
 import { dealAnalyses, savedDeals, dealAlerts, properties } from "@/data/properties";
 import { formatCurrency, formatPercent, getStageColor, formatRelativeDate } from "@/lib/utils";
 import {
@@ -88,6 +92,11 @@ export default function DashboardPage() {
           <p className="text-muted-foreground">Here is your real estate investment overview for today.</p>
         </div>
 
+        {/* XP Bar */}
+        <div className="mb-6">
+          <XPBar />
+        </div>
+
         {/* Stats */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
           <StatCard
@@ -120,6 +129,12 @@ export default function DashboardPage() {
             icon={Bell}
             iconColor="bg-purple-500"
           />
+        </div>
+
+        {/* Market Pulse + Weekly Report */}
+        <div className="grid lg:grid-cols-2 gap-6 mb-8">
+          <MarketPulse />
+          <WeeklyReport />
         </div>
 
         <div className="grid lg:grid-cols-3 gap-6 mb-8">
@@ -236,6 +251,11 @@ export default function DashboardPage() {
               </CardContent>
             </Card>
           </div>
+        </div>
+
+        {/* Deal History Summary */}
+        <div className="mb-8">
+          <DealHistory compact />
         </div>
 
         {/* Active Alerts Summary */}

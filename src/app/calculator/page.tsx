@@ -12,6 +12,7 @@ import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
 import { Slider } from "@/components/ui/slider";
 import { Disclaimer } from "@/components/shared/disclaimer";
+import { ScenarioLibrary } from "@/components/features/scenario-library";
 import { calculateInvestment } from "@/lib/calculations";
 import { formatCurrency, formatCurrencyDetailed, formatPercent, formatPercentDetailed } from "@/lib/utils";
 import { InvestmentCalc } from "@/types";
@@ -177,6 +178,9 @@ export default function CalculatorPage() {
                 {inputField("Annual Appreciation", "appreciationRate", undefined, "%", 0.5)}
               </CardContent>
             </Card>
+
+            {/* Scenario Library */}
+            <ScenarioLibrary currentParams={calc} />
           </div>
 
           {/* Results */}
