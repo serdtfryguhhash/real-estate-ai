@@ -34,6 +34,7 @@ const navItems = [
 ];
 
 const secondaryNav = [
+  { href: "/demo", label: "Demo" },
   { href: "/pricing", label: "Pricing" },
   { href: "/blog", label: "Blog" },
 ];
@@ -161,6 +162,10 @@ export function Header() {
               </Link>
             ))}
             <div className="border-t border-border pt-2 mt-2 space-y-1">
+              <Link href="/demo" onClick={() => setMobileMenuOpen(false)}
+                className="flex items-center gap-2 px-3 py-2.5 text-sm font-medium text-muted-foreground hover:text-foreground rounded-md">
+                Demo
+              </Link>
               <Link href="/pricing" onClick={() => setMobileMenuOpen(false)}
                 className="flex items-center gap-2 px-3 py-2.5 text-sm font-medium text-muted-foreground hover:text-foreground rounded-md">
                 Pricing

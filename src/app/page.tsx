@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { PropertyCard } from "@/components/shared/property-card";
+import { MortgageCalculator } from "@/components/shared/mortgage-calculator";
 import { TypeformNewsletter } from "@/components/shared/typeform-newsletter";
 import { Disclaimer } from "@/components/shared/disclaimer";
 import { dealAnalyses } from "@/data/properties";
@@ -28,6 +29,7 @@ import {
   Users,
   Building2,
   Zap,
+  Play,
 } from "lucide-react";
 
 const features = [
@@ -182,14 +184,14 @@ export default function LandingPage() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
-              <Link href="/deals">
+              <Link href="/demo">
                 <Button
                   size="xl"
                   variant="accent"
                   className="w-full sm:w-auto text-base shadow-lg shadow-accent/25"
                 >
-                  Analyze a Deal
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <Play className="mr-2 h-5 w-5" />
+                  Try Free Demo
                 </Button>
               </Link>
               <Link href="/deals">
@@ -199,6 +201,7 @@ export default function LandingPage() {
                   className="w-full sm:w-auto text-base border-white/30 text-white hover:bg-white/10 hover:text-white backdrop-blur-sm"
                 >
                   Browse Properties
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
             </div>
@@ -401,6 +404,39 @@ export default function LandingPage() {
             {topDeals.map((analysis) => (
               <PropertyCard key={analysis.id} analysis={analysis} />
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section divider */}
+      <div className="section-divider" />
+
+      {/* ===== MORTGAGE / ROI CALCULATOR ===== */}
+      <section className="py-24 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <Badge variant="secondary" className="mb-4">
+              <Calculator className="h-3 w-3 mr-1" />
+              Interactive Calculator
+            </Badge>
+            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4 font-display">
+              Mortgage &amp; ROI Calculator
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Drag the sliders to model any deal. See monthly payments, equity
+              growth projections, and estimated investment returns in real time.
+            </p>
+          </div>
+
+          <MortgageCalculator />
+
+          <div className="text-center mt-10">
+            <Link href="/calculator">
+              <Button variant="outline" size="lg" className="rounded-xl">
+                Open Full Calculator
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
