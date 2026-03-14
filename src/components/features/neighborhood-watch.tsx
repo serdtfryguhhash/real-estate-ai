@@ -77,7 +77,7 @@ const defaultNeighborhoods: WatchedNeighborhood[] = [
       { month: "Nov", price: 452000 }, { month: "Dec", price: 450000 },
       { month: "Jan", price: 448000 }, { month: "Feb", price: 445000 },
     ],
-    alerts: ["Inventory up 15% — buyer's market forming"],
+    alerts: ["Inventory up 15% - buyer's market forming"],
     addedAt: "2026-01-20T00:00:00Z",
   },
   {

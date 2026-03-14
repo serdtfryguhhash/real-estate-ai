@@ -33,15 +33,15 @@ interface MarketPulseData {
 const mockPulse: MarketPulseData = {
   date: new Date().toISOString().split("T")[0],
   summary: "Markets showing mixed signals with Austin seeing 3.2% MoM price increases while Tampa inventory builds. Strong buyer opportunities emerging in suburban neighborhoods.",
-  newListings: { count: 47, highlight: "3BR/2BA in Maple Grove listed 12% below comps at $285K — potential cash flow play" },
+  newListings: { count: 47, highlight: "3BR/2BA in Maple Grove listed 12% below comps at $285K - potential cash flow play" },
   priceTrends: { direction: "up", percentChange: 2.8, insight: "Median prices up across target areas, driven by low inventory in desirable school districts" },
   rateImpact: { currentRate: 6.75, impact: "Rates stable this week. Current rate environment favors negotiating seller concessions for rate buydowns over price reductions." },
   opportunities: [
     { area: "Maple Grove, Austin", reason: "New employer relocations driving rental demand, 3 distressed sales this week", urgency: "high" },
-    { area: "Westshore, Tampa", reason: "Condo inventory building — negotiation power increasing for patient buyers", urgency: "medium" },
+    { area: "Westshore, Tampa", reason: "Condo inventory building, negotiation power increasing for patient buyers", urgency: "medium" },
     { area: "Cherry Creek, Denver", reason: "Seasonal listing surge creating more selection, prices softening 1.5%", urgency: "low" },
   ],
-  actionItem: "Review the 3 distressed listings in Maple Grove — motivated sellers with 60+ days on market may accept 8-10% below asking.",
+  actionItem: "Review the 3 distressed listings in Maple Grove. Motivated sellers with 60+ days on market may accept 8-10% below asking.",
 };
 
 export function MarketPulse() {

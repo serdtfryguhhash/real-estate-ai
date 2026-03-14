@@ -48,7 +48,7 @@ const mockReport: WeeklyReportData = {
   marketTrends: [
     { trend: "Austin median price up 3.2% month-over-month", impact: "positive" },
     { trend: "Mortgage rates held steady at 6.75%", impact: "neutral" },
-    { trend: "Tampa condo inventory up 15% — buyer leverage increasing", impact: "positive" },
+    { trend: "Tampa condo inventory up 15%, buyer leverage increasing", impact: "positive" },
     { trend: "Denver seeing seasonal spring listing surge", impact: "neutral" },
   ],
   portfolioPerformance: {
@@ -57,7 +57,7 @@ const mockReport: WeeklyReportData = {
     insight: "Portfolio value up $18.5K this week driven by Austin appreciation. Cash flow stable at $3,200/mo.",
   },
   bestOpportunities: [
-    { description: "Distressed 3BR in Maple Grove — seller motivated, 60+ DOM", potentialReturn: "12-15% CoC" },
+    { description: "Distressed 3BR in Maple Grove - seller motivated, 60+ DOM", potentialReturn: "12-15% CoC" },
     { description: "Multi-family duplex in Tampa near university", potentialReturn: "9-11% cap rate" },
   ],
   nextSteps: [

@@ -20,7 +20,7 @@ export const properties: Property[] = [
     status: "active",
     daysOnMarket: 47,
     images: ["https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&h=600&fit=crop", "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop", "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop"],
-    description: "Charming single-family home in a well-established neighborhood. Features an open floor plan, updated kitchen with granite countertops, and a spacious backyard. Close to parks, schools, and shopping. Motivated seller — bring offers!",
+    description: "Charming single-family home in a well-established neighborhood. Features an open floor plan, updated kitchen with granite countertops, and a spacious backyard. Close to parks, schools, and shopping. Motivated seller - bring offers!",
     features: ["Granite Countertops", "Hardwood Floors", "Fenced Yard", "2-Car Garage", "Central A/C"],
     mlsNumber: "MLS-2026-4521",
     listingAgent: "Sarah Mitchell",
@@ -212,7 +212,7 @@ export const properties: Property[] = [
     status: "active",
     daysOnMarket: 41,
     images: ["https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&h=600&fit=crop", "https://images.unsplash.com/photo-1576941089067-2de3c901e126?w=800&h=600&fit=crop", "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800&h=600&fit=crop"],
-    description: "Well-maintained home in NoDa arts district. Freshly painted, new HVAC system, updated bathrooms. Great rental history — current tenant paying $1,850/mo on month-to-month lease.",
+    description: "Well-maintained home in NoDa arts district. Freshly painted, new HVAC system, updated bathrooms. Great rental history - current tenant paying $1,850/mo on month-to-month lease.",
     features: ["New HVAC", "Updated Baths", "Tenant in Place", "Near Light Rail", "Freshly Painted"],
     mlsNumber: "MLS-2026-6678",
     listingAgent: "Andrea Collins",
@@ -497,10 +497,10 @@ export function generateDealAnalysis(property: Property): DealAnalysis {
     dealScore >= 70 ? "low" : dealScore >= 50 ? "moderate" : "high";
 
   let recommendation = "";
-  if (dealScore >= 80) recommendation = "Strong Buy — Excellent fundamentals with significant upside potential. Property shows strong cash flow metrics and is priced well below ARV.";
-  else if (dealScore >= 65) recommendation = "Buy — Solid investment opportunity with good returns. Consider negotiating further on price to improve margins.";
-  else if (dealScore >= 50) recommendation = "Hold/Watch — Decent opportunity but not compelling at current price. Monitor for price reductions.";
-  else recommendation = "Pass — Current pricing does not support adequate returns. Risk-adjusted returns are below target thresholds.";
+  if (dealScore >= 80) recommendation = "Strong Buy - Excellent fundamentals with significant upside potential. Property shows strong cash flow metrics and is priced well below ARV.";
+  else if (dealScore >= 65) recommendation = "Buy - Solid investment opportunity with good returns. Consider negotiating further on price to improve margins.";
+  else if (dealScore >= 50) recommendation = "Hold/Watch - Decent opportunity but not compelling at current price. Monitor for price reductions.";
+  else recommendation = "Pass - Current pricing does not support adequate returns. Risk-adjusted returns are below target thresholds.";
 
   return {
     id: `analysis-${property.id}`,
@@ -676,10 +676,10 @@ Off-market properties typically sell at a 10-20% discount compared to listed pro
 ## Strategy 1: Direct Mail Campaigns
 
 Targeted direct mail remains one of the most effective strategies. Focus on:
-- **Absentee owners** — Landlords who live out of state are often motivated to sell
-- **High equity homeowners** — Owners with 50%+ equity have more flexibility on price
-- **Pre-foreclosure lists** — Homeowners facing financial hardship may need a quick sale
-- **Probate properties** — Inherited homes often need to be sold quickly
+- **Absentee owners** - Landlords who live out of state are often motivated to sell
+- **High equity homeowners** - Owners with 50%+ equity have more flexibility on price
+- **Pre-foreclosure lists** - Homeowners facing financial hardship may need a quick sale
+- **Probate properties** - Inherited homes often need to be sold quickly
 
 The key metrics to track: Response rate (1-3% is normal), cost per lead ($50-200), and cost per deal ($2,000-5,000).
 
@@ -703,7 +703,7 @@ Cultivate relationships with listing agents in your target areas. Let them know 
 
 ## The Bottom Line
 
-The most successful investors use a combination of all these strategies. Consistency is key — the best off-market deal finders treat sourcing as a daily activity, not a once-in-a-while effort.`,
+The most successful investors use a combination of all these strategies. Consistency is key - the best off-market deal finders treat sourcing as a daily activity, not a once-in-a-while effort.`,
     coverImage: "/images/blog-1.jpg",
     author: "Michael Torres",
     category: "Strategy",
@@ -779,42 +779,42 @@ The best deals show strong fundamentals across multiple metrics, not just one.`,
 ## Methodology
 
 We evaluated 150+ metro areas across five key criteria:
-1. **Rent-to-price ratio** (monthly rent / purchase price) — Target: >0.7%
-2. **Population growth** — 5-year trend
-3. **Job growth** — Diversity and trajectory
-4. **Landlord-friendly regulations** — Eviction timelines, rent control status
-5. **Market stability** — Price volatility and foreclosure rates
+1. **Rent-to-price ratio** (monthly rent / purchase price) - Target: >0.7%
+2. **Population growth** - 5-year trend
+3. **Job growth** - Diversity and trajectory
+4. **Landlord-friendly regulations** - Eviction timelines, rent control status
+5. **Market stability** - Price volatility and foreclosure rates
 
 ## The Top 10
 
-### 1. Kansas City, MO — Score: 94/100
+### 1. Kansas City, MO - Score: 94/100
 Rent-to-price ratio of 0.85%, diverse economy, landlord-friendly state laws. Median price $195K with average rents of $1,500+.
 
-### 2. Indianapolis, IN — Score: 91/100
+### 2. Indianapolis, IN - Score: 91/100
 Exceptional affordability with median prices around $185K. Strong rental demand from growing tech sector and logistics hub.
 
-### 3. Memphis, TN — Score: 89/100
+### 3. Memphis, TN - Score: 89/100
 The cash flow capital of America. Rent-to-price ratios exceeding 1% in many neighborhoods. FedEx headquarters provides economic stability.
 
-### 4. San Antonio, TX — Score: 87/100
+### 4. San Antonio, TX - Score: 87/100
 Military bases provide stable rental demand. No state income tax. Rapidly growing population with affordable housing stock.
 
-### 5. Birmingham, AL — Score: 85/100
+### 5. Birmingham, AL - Score: 85/100
 Incredibly affordable entry points with strong rent-to-price ratios. University and medical sector provide economic diversity.
 
-### 6. Cleveland, OH — Score: 84/100
+### 6. Cleveland, OH - Score: 84/100
 Rock-bottom prices with solid rental demand. Cleveland Clinic and major university system anchor the economy.
 
-### 7. Jacksonville, FL — Score: 83/100
+### 7. Jacksonville, FL - Score: 83/100
 Florida's growth story extends to Jacksonville with landlord-friendly laws and no state income tax.
 
-### 8. Little Rock, AR — Score: 81/100
+### 8. Little Rock, AR - Score: 81/100
 Under-the-radar market with exceptional cash flow metrics. State capital provides government employment stability.
 
-### 9. Tulsa, OK — Score: 80/100
+### 9. Tulsa, OK - Score: 80/100
 Energy sector diversification and remote worker incentive programs driving population growth.
 
-### 10. Charlotte, NC — Score: 79/100
+### 10. Charlotte, NC - Score: 79/100
 Banking capital of the Southeast with strong job growth. Slightly lower cash flow but excellent appreciation potential.
 
 ## Key Takeaways
